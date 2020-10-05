@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBH.Common", "..\..\Common
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBH.Core", "..\QLBH.Core\QLBH.Core.csproj", "{FDC03BE7-C630-40E2-B665-69E92A1DFB9E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBH.Win", "..\QLBH.Win\QLBH.Win.csproj", "{24595F7F-5145-4E0B-85EB-43306313EEBE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QLBH.Win", "..\..\Common\QLBH.Win\QLBH.Win.csproj", "{24595F7F-5145-4E0B-85EB-43306313EEBE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
