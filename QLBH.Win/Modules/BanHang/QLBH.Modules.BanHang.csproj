@@ -2,7 +2,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>9.0.30729</ProductVersion>
+    <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{654DA1FC-54B2-486C-BDBB-EBC3FC4EB351}</ProjectGuid>
     <OutputType>Library</OutputType>
@@ -137,13 +137,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\QLBH.Win\Properties\Resources.Designer.cs">
+    <Compile Include="..\..\..\QLBH.Win\Properties\Resources.Designer.cs">
       <Link>Properties\Resources.Designer.cs</Link>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="..\..\QLBH.Win\Properties\Settings.Designer.cs">
+    <Compile Include="..\..\..\QLBH.Win\Properties\Settings.Designer.cs">
       <Link>Properties\Settings.Designer.cs</Link>
       <AutoGen>True</AutoGen>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
@@ -1462,8 +1462,8 @@
     <EmbeddedResource Include="..\..\Properties\Resources.resx">
       <Link>Properties\Resources.resx</Link>
       <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources1.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\BanHang\frmCS_ThietLapDiemThuong.resx">
       <DependentUpon>frmCS_ThietLapDiemThuong.cs</DependentUpon>
@@ -1515,6 +1515,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\BanHang\frmBC_CongNoPOS_AR0400.resx">
       <DependentUpon>frmBC_CongNoPOS_AR0400.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\BanHang\frmBH_BangGiaBanHang_Online.resx">
       <DependentUpon>frmBH_BangGiaBanHang_Online.cs</DependentUpon>
@@ -1546,6 +1547,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\BanHang\frmBC_LichSuGiaBan.resx">
       <DependentUpon>frmBC_LichSuGiaBan.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Modules\BanHang\frmBH_ListDonHangGiaoNhan.resx">
       <DependentUpon>frmBH_ListDonHangGiaoNhan.cs</DependentUpon>
@@ -2257,7 +2259,7 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "$(ProjectDir)..\..\..\QLBH.Documents\References\TranAnh\BanHang\$(TargetFileName)"
-copy /Y "$(ProjectDir)bin\$(ConfigurationName)\TranAnh\QLBanHang.Modules.BanHang.pdb" "$(ProjectDir)..\..\..\QLBH.Documents\References\TranAnh\BanHang\QLBanHang.Modules.BanHang.pdb"</PostBuildEvent>
+    <PostBuildEvent>copy "$(TargetDir)$(TargetFileName)" "$(ProjectDir)..\..\..\..\Common\QLBH.Documents\References\TranAnh\BanHang\$(TargetFileName)"
+copy /Y "$(ProjectDir)bin\$(ConfigurationName)\TranAnh\QLBanHang.Modules.BanHang.pdb" "$(ProjectDir)..\..\..\..\Common\QLBH.Documents\References\TranAnh\BanHang\QLBanHang.Modules.BanHang.pdb"</PostBuildEvent>
   </PropertyGroup>
 </Project>

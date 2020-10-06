@@ -67,36 +67,40 @@
   <ItemGroup>
     <Reference Include="DevExpress.Data.v9.2, Version=9.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\QLBH.Documents\References\DevExpress.Data.v9.2.dll</HintPath>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\DevExpress.Data.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.Utils.v9.2, Version=9.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\QLBH.Documents\References\DevExpress.Utils.v9.2.dll</HintPath>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\DevExpress.Utils.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraBars.v9.2, Version=9.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\QLBH.Documents\References\DevExpress.XtraBars.v9.2.dll</HintPath>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\DevExpress.XtraBars.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="DevExpress.XtraEditors.v9.2, Version=9.2.4.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\QLBH.Documents\References\DevExpress.XtraEditors.v9.2.dll</HintPath>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\DevExpress.XtraEditors.v9.2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="QLBanHang.Modules.BaoHanh, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\QLBH.Documents\References\TranAnh\BaoHanh\QLBanHang.Modules.BaoHanh.dll</HintPath>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\TranAnh\BaoHanh\QLBanHang.Modules.BaoHanh.dll</HintPath>
     </Reference>
     <Reference Include="QLBanHang.Modules.DanhMuc, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\QLBH.Documents\References\TranAnh\DanhMuc\QLBanHang.Modules.DanhMuc.dll</HintPath>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\TranAnh\DanhMuc\QLBanHang.Modules.DanhMuc.dll</HintPath>
     </Reference>
     <Reference Include="QLBanHang.Modules.DongBoERP, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\QLBH.Documents\References\TranAnh\DongBoERP\QLBanHang.Modules.DongBoERP.dll</HintPath>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\TranAnh\DongBoERP\QLBanHang.Modules.DongBoERP.dll</HintPath>
     </Reference>
     <Reference Include="QLBanHang.Modules.HeThong, Version=0.0.0.0, Culture=neutral, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\QLBH.Documents\References\TranAnh\HeThong\QLBanHang.Modules.HeThong.dll</HintPath>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\TranAnh\HeThong\QLBanHang.Modules.HeThong.dll</HintPath>
+    </Reference>
+    <Reference Include="QLBH.Core, Version=1.0.1.1, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Common\QLBH.Documents\References\QLBH.Core.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Configuration" />
@@ -143,11 +147,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="..\frmMain.cs">
+    <Compile Include="..\..\..\..\Common\QLBH.Win\Modules\frmMain.cs">
       <Link>frmMain.cs</Link>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="..\frmMain.designer.cs">
+    <Compile Include="..\..\..\..\Common\QLBH.Win\Modules\frmMain.designer.cs">
       <Link>frmMain.designer.cs</Link>
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
@@ -178,10 +182,6 @@
     <ProjectReference Include="..\..\..\..\Common\QLBH.Common\QLBH.Common.csproj">
       <Project>{D8FDE99A-C8B2-4585-BBBA-D021ED285554}</Project>
       <Name>QLBH.Common</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\..\QLBH.Core\QLBH.Core.csproj">
-      <Project>{FDC03BE7-C630-40E2-B665-69E92A1DFB9E}</Project>
-      <Name>QLBH.Core</Name>
     </ProjectReference>
     <ProjectReference Include="QLBH.Modules.BanHang.csproj">
       <Project>{654DA1FC-54B2-486C-BDBB-EBC3FC4EB351}</Project>
